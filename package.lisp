@@ -8,7 +8,9 @@
 	   degrees-minutes-seconds->radians
 	   degrees->degrees-minutes
 	   degrees->degrees-minutes-seconds
-	   radians->degrees-minutes-seconds))
+	   radians->degrees-minutes-seconds
+	   ;;
+	   int-string))
 
 
 
