@@ -10,6 +10,9 @@
 	   degrees->degrees-minutes-seconds
 	   radians->degrees-minutes-seconds
 	   ;;
+	   seconds->hours-minutes-seconds
+	   hours-minutes-seconds->seconds
+	   ;;
 	   int-string))
 
 
