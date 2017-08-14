@@ -13,7 +13,12 @@
 	   seconds->hours-minutes-seconds
 	   hours-minutes-seconds->seconds
 	   ;;
-	   int-string))
+	   int-string
+	   ;;
+	   inch->mm
+	   mm->inch
+	   ))
+
 
 
 

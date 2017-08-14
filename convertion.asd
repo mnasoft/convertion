@@ -7,5 +7,6 @@
   :serial t
   :components ((:file "package")
                (:file "convertion")
+	       (:file "length-convertion")
 	       (:file "angle-convertion")))
 
