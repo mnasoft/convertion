@@ -10,7 +10,11 @@
 	   degrees->degrees-minutes-seconds
 	   radians->degrees-minutes-seconds
 	   ;;
-	   int-string))
+	   int-string
+	   ;;
+	   inch->mm
+	   mm->inch
+	   ))
 
 
 
