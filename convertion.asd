@@ -8,5 +8,7 @@
   :components ((:file "package")
                (:file "convertion")
 	       (:file "length-convertion")
-	       (:file "angle-convertion")))
+	       (:file "angle-convertion")
+	       (:file "time-convertion")
+	       ))
 
