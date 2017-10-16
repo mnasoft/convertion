@@ -13,6 +13,8 @@
 	   seconds->hours-minutes-seconds
 	   hours-minutes-seconds->seconds
 	   ;;
+	   print-seconds->hh-mm-ss
+	   ;;
 	   int-string
 	   ;;
 	   inch->mm
