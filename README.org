@@ -10,6 +10,8 @@ pwd
 
 #+name: classes
 #+BEGIN_SRC lisp :var fpath=pwd :exports none
+;;;;(require :mnas-graph)
+;;;;(require :mnas-package)
   (mnas-graph:view-graph
    (mnas-package:make-class-graph :convertion)
    :viewer nil
@@ -17,9 +19,7 @@ pwd
 #+END_SRC
 
 #+RESULTS: classes
-: #GRAPH(VC=23 RC=8)
-: (T:"<RECTANGLE>" T:"<POINT-3D>" T:"<CIRCLE>" T:"<ZAVIHRITEL-OSEVOY>" T:"<AREABLE>" T:"<AREABLE>" T:"<ZAVIHRITEL-OSEVOY>" T:"<AREABLE>" T:"<ROMB>" T:"<AREABLE>" T:"<RECTANGLE>" T:"<AREABLE>" T:"<CIRCLE>" T:"<ROMB>" T:"<PERIMETRABLE>" T:"<PERIMETRABLE>" T:"<ZAVIHRITEL-OSEVOY>" T:"<PERIMETRABLE>" T:"<ROMB>" T:"<PERIMETRABLE>" T:"<RECTANGLE>" T:"<PERIMETRABLE>" T:"<CIRCLE>" )
-: ((T:"<AREABLE>"->T:"<ZAVIHRITEL-OSEVOY>") (T:"<AREABLE>"->T:"<ROMB>") (T:"<AREABLE>"->T:"<RECTANGLE>") (T:"<AREABLE>"->T:"<CIRCLE>") (T:"<PERIMETRABLE>"->T:"<ZAVIHRITEL-OSEVOY>") (T:"<PERIMETRABLE>"->T:"<ROMB>") (T:"<PERIMETRABLE>"->T:"<RECTANGLE>") (T:"<PERIMETRABLE>"->T:"<CIRCLE>") ))
+: #GRAPH(VC=0 RC=0)
 
 #+CAPTION: Диаграмма классов
 #+NAME:   areas:classes
@@ -29,13 +29,6 @@ pwd
 
 
 * [0/5] Задачи
-- [ ] Написать классы:
-  - [ ] pipe;
-  - [ ] ring;
-  - [ ] round-bar;
-- [ ] Написать обобщенные функции:
-  - [ ] volume;
-  - [ ] mass;
 - [ ] Написать функции тестирования
 - [ ] Выполнить стилевое оформление кода по [[file:~/org/sbcl/cl-style-guide.org][cl-style-guide]]:
   - [ ] Указать типы для слотов всех классов;
@@ -47,7 +40,7 @@ pwd
 #+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
 #+OPTIONS: timestamp:t title:t toc:t todo:t |:t
-#+TITLE: AREAS
+#+TITLE: CONVERTION
 #+DATE: <2020-01-02 Чт>
 #+AUTHOR:
 #+EMAIL: namatv@mnasoft-00

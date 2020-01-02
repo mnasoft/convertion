@@ -13,6 +13,3 @@
 @end(list)
 "
 (defun int-string (int) (format nil "~A" int))
-
-
- 
