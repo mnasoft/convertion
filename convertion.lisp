@@ -2,14 +2,13 @@
 
 (in-package #:convertion)
 
-(annot:enable-annot-syntax)
+(export 'int-string )
 
-@export
-@annot.doc:doc
+(defun int-string (int)
 "@b(Описание:) int-string проеобразует целое число в строку.
 @b(Переменые:)
 @begin(list)
  @item(int - целое число для преобразования.)
 @end(list)
 "
-(defun int-string (int) (format nil "~A" int))
+  (format nil "~A" int))
