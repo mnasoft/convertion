@@ -2,10 +2,8 @@
 
 (in-package #:convertion)
 
-(export 'int-string )
-
 (defun int-string (int)
-"@b(Описание:) int-string проеобразует целое число в строку.
+  "@b(Описание:) int-string проеобразует целое число в строку.
 @b(Переменые:)
 @begin(list)
  @item(int - целое число для преобразования.)

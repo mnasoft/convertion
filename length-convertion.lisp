@@ -2,10 +2,8 @@
 
 (in-package #:convertion)
 
-(export 'inch->mm )
-
 (defun inch->mm (l-inch)
-"@b(Описание:) inch->mm переводит дюймы в милиметры.
+  "@b(Описание:) inch->mm переводит дюймы в милиметры.
 @b(Переменые:)
 @begin(list)
  @item(l-inch - количество дюймов.)
@@ -13,10 +11,8 @@
 "
   (* 254/10 l-inch))
 
-(export 'mm->inch )
-
 (defun mm->inch (l-mm)
-"@b(Описание:) inch->mm переводит милиметры в дюймы.
+  "@b(Описание:) inch->mm переводит милиметры в дюймы.
 @b(Переменые:)
 @begin(list)
  @item(l-inch - количество милиметров.)

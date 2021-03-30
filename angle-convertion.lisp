@@ -2,26 +2,20 @@
 
 (in-package #:convertion)
 
-(export 'degrees->radians )
-
 (defun degrees->radians (degrees)
-"Преобразование угловой меры, выраженной в градусах, в радианы;
+  "Преобразование угловой меры, выраженной в градусах, в радианы;
 Пример использования:
 (degrees->radians 45)
 =>0.7853981633974483D0"
   (/ degrees (/ 180 pi)))
 
-(export 'radians->degrees )
-
 (defun radians->degrees (radians)
-"Преобразование угловой меры, выраженной в радианах, в градусы;
+  "Преобразование угловой меры, выраженной в радианах, в градусы;
 Пример использования:
 (radians->degrees 0.7853981633974483D0)
 => 45.0d0
 "
   (/ radians (/ pi 180)))
-
-(export 'degrees-minutes-seconds->degrees )
 
 (defun degrees-minutes-seconds->degrees (degrees &optional (minutes 0) (seconds 0))
 "Преобразование  угловой меры, выраженной в градусах минутах и секундах, в градусы;
@@ -30,8 +24,6 @@
 => 25.423680555555556d0
 "
   (+ degrees (/ minutes 60) (/ seconds 60 60)))
-
-(export 'degrees-minutes-seconds->radians )
 
 (defun degrees-minutes-seconds->radians (degrees &optional (minutes 0) (seconds 0))
 "Преобразование  угловой меры, выраженной в градусах минутах и секундах, в радианы;
@@ -42,8 +34,6 @@
   (degrees->radians
    (degrees-minutes-seconds->degrees degrees minutes seconds)))
 
-(export 'degrees->degrees-minutes)
-
 (defun degrees->degrees-minutes(degrees)
 "Преобразование  угловой меры, выраженной в градусах, в градусы и минуты;
 Пример использования:
@@ -53,8 +43,6 @@
   (multiple-value-bind (d m)
       (truncate degrees)
     (values  d (* m 60))))
-
-(export 'degrees->degrees-minutes-seconds)
 
 (defun degrees->degrees-minutes-seconds(degrees)
 "Преобразование угловой меры, выраженной в градусах, в градусы и  минуты и секунды;
