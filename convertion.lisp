@@ -1,6 +1,6 @@
 ;;;; convertion.lisp
 
-(in-package #:convertion)
+(in-package :convertion)
 
 (defun int-string (int)
   "@b(Описание:) int-string проеобразует целое число в строку.

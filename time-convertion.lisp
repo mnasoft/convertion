@@ -1,6 +1,6 @@
 ;;;; time-convertion.lisp
 
-(in-package #:convertion)
+(in-package :convertion)
 
 (defun seconds->hours-minutes-seconds (s)
   "@b(Описание:) функция @b(seconds->hours-minutes-seconds)

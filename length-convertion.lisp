@@ -1,6 +1,6 @@
 ;;;; length-convertion.lisp
 
-(in-package #:convertion)
+(in-package :convertion)
 
 (defun inch->mm (l-inch)
   "@b(Описание:) inch->mm переводит дюймы в милиметры.

@@ -1,6 +1,6 @@
 ;;;; package.lisp
 
-(defpackage #:convertion
+(defpackage :convertion
   (:use #:cl)
   (:export 
            
